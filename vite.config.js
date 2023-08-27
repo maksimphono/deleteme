@@ -1,5 +1,5 @@
-import {defaultConfig} from "vite"
+import {defineConfig} from "vite"
 
-export default defaultConfig({
+export default defineConfig({
     base : "/deleteme/"
 })
