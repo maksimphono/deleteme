@@ -48,6 +48,7 @@ h1 {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  animation: anim 5s linear 0s infinite alternate;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -94,4 +95,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@keyframes anim {
+  from {
+    transform: rotate(0) translateX(0);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px);
+  }
+     
 }
